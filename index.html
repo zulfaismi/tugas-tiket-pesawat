@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zulfa</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            margin: 0px;
+            padding: 20px;
+            background-image: url(/pesawat.jpeg);
+            background-size: cover;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TIKET PESAWAT</h1>
+    <form>
+        <fieldset>
+            <legend>Informasi Penumpang</legend>
+            NAMA LENGKAP: <input type="text" name="NAMA" placeholder="masukan nama lengkap"><br>
+            NOMER INDENTITAS: <input type="text" name="INDENTITAS" placeholder="masukan nomer identitas"><br>
+            JENIS KELAMIN:
+            <input type="radio" name="gender" value="laki-laki" checked> laki-laki
+            <input type="radio" name="gender" value="perempuan">perempuan<br>
+            ALAMAT EMAIL: <input type="email" name="email" placeholder="masukan email"><br>
+            NOMOR TELEPON: <input type="text" name="telepon" placeholder="masukan nomer telepon"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>INFORMASI PENERBANGAN</legend>
+            BANDARA KEBERANGKATAN:
+            <select name="KEBERANGKATAN">
+                <option>bandara kamboja</option>
+                <option>bandra inggris</option>
+                <option>bandara praya</option>
+            </select> <br>
+
+            BANDARA TUJUAN:
+            <select name="TUJUAN">
+                <option>bandara internasional lombok</option>
+                <option>bandara soekarno hatta</option>
+                <option>bandara bali</option>
+            </select><br>
+
+            TANGGAL KEBERANGKATAN: <input type="date" name="KEBERANGKATAN"> <br>
+            TANGGAL KEPULANGAN: <input type="date" name="KEPULANGAN"><br>
+            KELAS PENERBANGAN:
+            <select name="KELAS">
+                <option>EKONOMI</option>
+                <option>bisnis</option>
+                <option>VVVVIP</option>
+            </select><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>METODE PEMBAYARAN</legend>
+            <input type="radio" name="PEMBAYARAN" value="kartu kredit"> kartu kredit<br>
+            <input type="radio" name="PEMBAYARAN" value="transfer bank"> transfer bank<br>
+            <input type="radio" name="PEMBAYARAN" value="E-Wallet"> (GoPay,OVO,DANA, dll.)<br>
+        </fieldset>
+
+        <br>
+        <button type="submit">pesan tiket</button>
+    </form>
+</body>
+
+</html>
